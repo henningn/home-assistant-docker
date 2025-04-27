@@ -1,4 +1,3 @@
-version: '3'
 services:
   homeassistant:
     image: homeassistant/home-assistant:stable
@@ -8,6 +7,4 @@ services:
       - TZ=Europe/Berlin
     volumes:
       - ${HOME}/ha-config:/config
-    ports:
-      - 8123:8123
     restart: unless-stopped
